@@ -1,0 +1,241 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Noto Sans TC', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* 開始 */
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+.banner {
+    background: url(./image/banner.png) no-repeat;
+    background-position: center center;
+    background-size: cover;
+    height: 958px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 56px;
+}
+
+.content {
+    margin: 0 auto;
+    color: white;
+}
+.content > p {
+    font-style: italic;
+    font-size: 24px;
+    line-height: 42px;
+    font-weight: 600;
+}
+h1 {
+    font-size: 80px;
+    line-height: 106px;
+    font-weight: 900;
+    font-style: italic;
+}
+.content > h2 {
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 32px;
+    font-style: italic;
+    font-weight: 600;
+}
+.icon {
+    margin: 0 auto;
+    padding-top: 40px;
+}
+.icon > img {
+    width: 60px;
+    height: 60px;
+    margin-right: 16px;
+}
+.icon > img:hover {
+    cursor: pointer;
+    opacity: 40%;
+}
+.icon > img:last-child { margin-right: 0 }
+h3 {
+    font-size: 64px;
+    line-height: 84px;
+    font-weight: 500;
+    text-align: center;
+    padding-bottom: 40px;
+    font-style: italic;
+}
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 24px;
+    line-height: 42px;
+    margin-bottom: 56px;
+}
+.profile > img {
+    width: 384px;
+    height: 384px;
+}
+.study {
+    text-align: center;
+    padding-bottom: 24px;
+    border-bottom: 1px solid black;
+}
+.work {
+    padding-top: 28px;
+    text-align: center;
+}
+.work > li > span {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #891818;
+    display: inline-block;
+    margin-right: 16px;
+}
+.myBrand {
+    color: white;
+    font-style: italic;
+    background-color: black;
+    height: 1406px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myBrand > h3 {
+    padding-top: 56px;
+}
+.myBrand > span {
+    font-size: 24px;
+    line-height: 42px;
+    padding-top: 12px;
+    padding-bottom: 32px;
+    font-weight: 500;
+}
+.myBrand > p {
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 500;
+    padding-bottom: 68px;
+}
+.topShirt {
+    margin-bottom: 40px;
+} 
+.twoShirt {
+    flex-wrap: wrap;
+    display: flex;
+}
+.twoShirt > img {
+    margin-right: 24px;
+}
+.twoShirt > img:last-child { margin-right: 0 }
+.otherWorks > h3 {
+    margin-top: 56px;
+    margin-bottom: 16px;
+}
+.otherWorks p {
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 500;
+    font-style: italic;
+    margin-bottom: 56px;
+    text-align: center;
+}
+.poster {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+}
+.poster p {
+    margin-top: 16px;
+}
+.photo {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+}
+.photo p {
+    margin-top: 16px
+}
+.design {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-top: 48px;
+    margin-bottom: 144px;
+}
+.design p {
+    margin-top: 16px
+}
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+footer h3 {
+    padding-top: 64px;
+    margin-bottom: 16px;
+}
+footer p {
+    font-size: 16px;
+    line-height: 36px;
+    font-weight: 500;
+    font-style: italic;
+    padding-bottom: 16px;
+}
+p:hover {
+    color: #891818;
+    cursor: pointer;
+}
+footer p:last-child { padding-bottom: 64px;}
